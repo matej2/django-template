@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    <h2>
+        You have been logged out. In order to completelly clear session data, it is recommended that you close all
+        browser windows.
+    </h2>
+    
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            <a href="{% url 'home' %}" class="ml-2">Back to home</a>
+        </small>
+        <small class="text-muted">
+             <a href="{% url 'login' %}" class="ml-2">Log in again</a>
+        </small>
+    </div>
+</div>
+{% endblock content %}
