@@ -19,6 +19,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
+# Metadata
+
+SITE_NAME = 'My site'
+SITE_URL = 'localhost'
+COMPANY_NAME = 'My company'
+COMPANY_CONTACT_EMAIL = 'info@mysite.com'
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-e6u1x-0$pzni-fy-6b6=dsv(aru=+1=$4uaawp7d2pz1m+xt_l'
 
@@ -67,6 +74,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'myproject.context_processors.admin_media'
             ],
         },
     },

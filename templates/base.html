@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <title>PyShop</title>
+    <title>My site</title>
 </head>
 <body>
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="{% url 'home' %}"><i class="fas fa-store"></i> PyShop</a>
+    <a class="navbar-brand" href="{% url 'home' %}"><i class="fas fa-store"></i> {{ SITE_NAME }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,6 +43,9 @@
             {% endif %}
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'about' %}"><i class="fas fa-info-circle"></i> About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'policy' %}"><i class="fas fa-info-circle"></i> Privacy policy</a>
             </li>
         </ul>
     </div>
