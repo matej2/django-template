@@ -5,7 +5,7 @@ This is a complete ready-to-use template for django framework.
 ## Features:
 
 - Base template, page menu
-- Deployment config: procfile (Heroku), deploy.sh
+- (TBD) Deployment config: procfile (Heroku), deploy.sh
 - User utilities: Login, registration, profile page
 - (TBD) Test user migrations
 - About page, privacy policy
