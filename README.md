@@ -1,6 +1,6 @@
 # Django-template
 
-This is a complete ready-to-use template for django framework.
+This is a complete ready-to-use template for django framework. It uses Bootstrap for design and Crispy forms for templates.
 
 ## Features:
 
@@ -17,3 +17,4 @@ If you cannot use template:
 
 1. Close repo locally
 2. Add another git remote
+3. Check for TODOs, they mark what needs to be changed / updated
