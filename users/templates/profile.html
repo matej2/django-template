@@ -12,12 +12,15 @@
         {% for group in request.user.groups.all %}
             <button type="button" class="btn btn-primary btn-sm">{{ group.name }}</button>
         {% endfor %}
+
+        <!-- TODO: Exclude comments if necessary -->
         <h2>Permissions</h2>
         <ul class="list-group">
             {% for permission in user.get_all_permissions %}
                 <li class="list-group-item">{{ permission }}</li>
             {% endfor %}
         </ul>
+
     </div>
 </div>
 {% endblock content %}
