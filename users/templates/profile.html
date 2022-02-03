@@ -2,9 +2,22 @@
 {% block content %}
 <div class="row">
     <div class="column">
-        <h1>Hello, {{ user.username }}</h1>
-        <p>On this page you can see your profile details, such as email, groups, permissions.</p>
-        <p>You can use this page to reset your password, deactivate or delete your profile.</p>
+        <h1>Hello, {{ user.get_username }}</h1>
+        <p>On this page you can see your profile details, such as email, groups, permissions.You can use this page to reset your password, deactivate or delete your profile.</p>
+        <p>Full name: {{ user.get_full_name }}</p>
+        <p>Email: {{ user.email }}</p>
+        <p>Last login: {{ user.last_login }}</p>
+        <p>Date created: {{ user.date_joined }}</p>
+        <h2>Groups</h2>
+        {% for group in request.user.groups.all %}
+            <button type="button" class="btn btn-primary btn-sm">{{ group.name }}</button>
+        {% endfor %}
+        <h2>Permissions</h2>
+        <div>
+            {% for permission in user.get_all_permissions %}
+                <button type="button" class="btn btn-primary btn-sm">{{ permission }}</button>
+            {% endfor %}
+        </div>
     </div>
 </div>
 {% endblock content %}
