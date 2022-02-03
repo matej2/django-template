@@ -25,6 +25,7 @@ SITE_NAME = 'My site'
 SITE_URL = 'localhost'
 COMPANY_NAME = 'My company'
 COMPANY_CONTACT_EMAIL = 'info@mysite.com'
+THEME_NAME = 'w3-theme-light-blue'
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-e6u1x-0$pzni-fy-6b6=dsv(aru=+1=$4uaawp7d2pz1m+xt_l'

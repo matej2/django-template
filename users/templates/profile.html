@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="row">
-    <div class="column">
+    <ul class="column">
         <h1>Hello, {{ user.get_username }}</h1>
-        <p>On this page you can see your profile details, such as email, groups, permissions.You can use this page to reset your password, deactivate or delete your profile.</p>
+        <p>On this page you can see your profile details, such as email, groups, permissions. If you want to change, remove or update any data, contact administrator.</p>
         <p>Full name: {{ user.get_full_name }}</p>
         <p>Email: {{ user.email }}</p>
         <p>Last login: {{ user.last_login }}</p>
@@ -13,11 +13,11 @@
             <button type="button" class="btn btn-primary btn-sm">{{ group.name }}</button>
         {% endfor %}
         <h2>Permissions</h2>
-        <div>
+        <ul class="list-group">
             {% for permission in user.get_all_permissions %}
-                <button type="button" class="btn btn-primary btn-sm">{{ permission }}</button>
+                <li class="list-group-item">{{ permission }}</li>
             {% endfor %}
-        </div>
+        </ul>
     </div>
 </div>
 {% endblock content %}

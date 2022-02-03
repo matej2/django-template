@@ -6,5 +6,6 @@ def admin_media(request):
         'SITE_NAME': settings.SITE_NAME,
         'SITE_URL': settings.SITE_URL,
         'COMPANY_NAME': settings.COMPANY_NAME,
-        'COMPANY_CONTACT_EMAIL': settings.COMPANY_CONTACT_EMAIL
+        'COMPANY_CONTACT_EMAIL': settings.COMPANY_CONTACT_EMAIL,
+        'THEME_NAME': settings.THEME_NAME
     }
