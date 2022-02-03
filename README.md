@@ -9,7 +9,8 @@ This is a complete ready-to-use template for django framework. It uses Bootstrap
 - User utilities: Login, registration, profile page
 - (TBD) Test user migrations
 - About page, privacy policy
-- Color schema
+- (TBD) Configurable color schema
+- (TBD) Scheduled application and shell script for crontab
 
 # Instructions
 
