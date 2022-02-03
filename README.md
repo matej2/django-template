@@ -4,11 +4,12 @@ This is a complete ready-to-use template for django framework. It uses Bootstrap
 
 ## Features:
 
-- Base template, page menu
+- Mobile-ready base template, page menu
 - (TBD) Deployment config: procfile (Heroku), deploy.sh
 - User utilities: Login, registration, profile page
 - (TBD) Test user migrations
 - About page, privacy policy
+- Color schema
 
 # Instructions
 
