@@ -18,7 +18,7 @@ def register(request):
             messages.success(request, f'Account created for {username}!')
             return redirect('home')
         else:
-            messages.error(request, 'Not valid, please check form!')
+            messages.error(request, 'Imput data not valid, please check form!')
     else:
         form = UserCreationForm()
     return render(request, 'register.html', {'form': form})

@@ -19,7 +19,7 @@
 <body>
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light w3-theme-l3">
+<nav class="navbar navbar-expand-lg navbar-light bg-light w3-theme">
     <a class="navbar-brand" href="{% url 'home' %}"><i class="fas fa-store"></i> {{ SITE_NAME }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,19 @@
 </nav>
 
 
-<div class="container py-4 w3-theme-light">
+<div class="container py-4 w3-theme-light min-vh-100">
+    <div class="alert alert-primary" role="alert">
+        This web application currently in development. Data might be incorrect, incomplete or missing.
+    </div>
+
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-info">
+        {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
+
     {% block content %}
     {% endblock %}
 </div>

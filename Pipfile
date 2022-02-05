@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 django-crispy-forms = "*"
 django = "*"
+apscheduler = "*"
 
 [dev-packages]
 
