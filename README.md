@@ -30,9 +30,10 @@ User utilities, such as user registration, login, profile and also data to load 
 # Instructions
 
 This project is a template, you can use it to start your own project.
-If you cannot use template, try the following:
+If you cannot use template, clone repo locally and add another git remote.
 
-1. Close repo locally
-2. Add another git remote
+Run server: `pipenv run python manage.py runserver`
+
+To create a superuser: `pipenv run python manage.py createsuperuser`
 
 Before deployment, check for TODOs, they mark what needs to be changed / updated. Privacy policy is just an example and it is not meant to be legally binding.
