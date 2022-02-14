@@ -12,6 +12,7 @@ This is a complete ready-to-use template for django framework along with some ex
 - Color schema, configurable with just one variable
 - (TBD) Scheduled application and shell script for crontab
 - (TBD) Error page with logging config (debug mode)
+- (TBD) Example API
 
 ## File structure
 
