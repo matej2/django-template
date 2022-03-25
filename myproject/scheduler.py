@@ -7,7 +7,7 @@ from apscheduler.triggers.interval import IntervalTrigger
 
 from users.util import print_stats
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "insta_map.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "myproject.settings")
 django.setup()
 
 
