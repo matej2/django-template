@@ -37,4 +37,6 @@ Run server: `pipenv run python manage.py runserver`
 
 To create a superuser: `pipenv run python manage.py createsuperuser`
 
+To create a test user: `echo "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_user('user', 'user@myproject.com', 'user')" | python manage.py shell`
+
 Before deployment, check for TODOs, they mark what needs to be changed / updated. Privacy policy is just an example and it is not meant to be legally binding.
