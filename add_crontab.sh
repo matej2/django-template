@@ -1,2 +1,7 @@
 #!/bin/sh
-(crontab -l ; echo "00 09 * * 1-5 pipenv run python $PWD/users/util.py") | crontab -
+FILE=($PWD/users/util.py)
+if grep -q util.py "$FILE"; then
+  (echo "00 09 * * 1-5 pipenv run python $FILE") | crontab -
+  echo "Added crontab"
+fi
+  echo "Crontab already exist."
